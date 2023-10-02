@@ -1,0 +1,160 @@
+{
+  "actions": [
+    {
+      "actionType": "set_screen",
+      "payload": {
+        "width": 1920,
+        "height": 1080,
+        "dpi": 96
+      }
+    }
+  ]
+}
+{
+  "actions": [
+    {
+      "actionType": "add_element",
+      "payload": {
+        "id": "btn_2",
+        "type": "button",
+        "coordinates": {
+          "x": 300,
+          "y": 400,
+          "width": 60,
+          "height": 40
+        }
+      }
+    }
+  ]
+}
+{
+  "actions": [
+    {
+      "actionType": "update_element_status",
+      "id": "txt_1",
+      "status": "focus"
+    }
+  ]
+}
+JSON validation failed: Type '{ id: string; type: "button"; title: string; coordinates: { x: number; y: number; width: number; height: number; }; elements: never[]; }' is not assignable to type 'Element'.
+{
+  "actions": [
+    {
+      "actionType": "add_element",
+      "payload": {
+        "id": "window_2",
+        "type": "button",
+        "title": "New Application",
+        "coordinates": {
+          "x": 0,
+          "y": 0,
+          "width": 600,
+          "height": 400
+        },
+        "elements": []
+      }
+    }
+  ]
+}
+{
+  "actions": [
+    {
+      "actionType": "update_element_status",
+      "id": "btn_1",
+      "status": "disabled"
+    }
+  ]
+}
+{
+  "actions": [
+    {
+      "actionType": "unknown",
+      "text": "Copy the content of the text field with ID txt_1."
+    }
+  ]
+}
+I didn't understand the following:
+Copy the content of the text field with ID txt_1.
+{
+  "actions": [
+    {
+      "actionType": "add_element",
+      "payload": {
+        "id": "label_2",
+        "type": "label",
+        "coordinates": {
+          "x": 150,
+          "y": 220,
+          "width": 0,
+          "height": 0
+        }
+      }
+    }
+  ]
+}
+{
+  "actions": [
+    {
+      "actionType": "update_element_status",
+      "id": "txt_1",
+      "status": "focus"
+    },
+    {
+      "actionType": "add_element",
+      "payload": {
+        "id": "txt_1",
+        "type": "text_field",
+        "coordinates": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      }
+    }
+  ]
+}
+{
+  "actions": [
+    {
+      "actionType": "add_element",
+      "payload": {
+        "id": "btn_2",
+        "type": "button",
+        "coordinates": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "actionType": "update_element_status",
+      "id": "btn_2",
+      "status": "enabled"
+    },
+    {
+      "actionType": "update_coordinates",
+      "id": "window_2",
+      "payload": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
+{
+  "actions": [
+    {
+      "actionType": "set_screen",
+      "payload": {
+        "width": 0,
+        "height": 0,
+        "dpi": 72
+      }
+    }
+  ]
+}

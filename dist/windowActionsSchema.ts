@@ -7,6 +7,9 @@ export type Action =
     | UpdateCoordinatesAction
     | AddElementAction
     | UpdateElementStatusAction
+    | ClickAction
+    | TypeAction
+    | InputAction
     | UnknownAction;
 
 // Action to set the screen configuration
@@ -33,6 +36,31 @@ export type UpdateElementStatusAction = {
     actionType: 'update_element_status';
     id: string;
     status: 'enabled' | 'disabled' | 'focus';
+};
+
+// Action to click an element
+export type ClickAction = {
+    actionType: 'click';
+    target: string; // ID of the target element
+    result: 'success' | 'failure';
+    timestamp: string;
+};
+
+// Action to type into a text field
+export type TypeAction = {
+    actionType: 'type';
+    target: string; // ID of the target text field
+    content: string;
+    result: 'success' | 'failure';
+    timestamp: string;
+};
+
+// Action to input into a text field
+export type InputAction = {
+    actionType: 'input';
+    target: Target;
+    details: Details;
+    timestamp: string;
 };
 
 // Action to catch unknown requests
@@ -69,4 +97,20 @@ export type Window = {
     title: string;
     coordinates: Coordinates;
     elements: string[];
+};
+
+export type Target = {
+    id: string;
+    coordinates: Coordinates;
+};
+
+export type Details = {
+    content: string;
+    cursor_position: CursorPosition;
+    modifiers: string[];
+};
+
+export type CursorPosition = {
+    start: number;
+    end: number;
 };

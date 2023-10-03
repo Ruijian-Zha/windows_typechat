@@ -36,22 +36,24 @@
     }
   ]
 }
-JSON validation failed: Type '{ id: string; type: "button"; title: string; coordinates: { x: number; y: number; width: number; height: number; }; elements: never[]; }' is not assignable to type 'Element'.
 {
   "actions": [
     {
-      "actionType": "add_element",
+      "actionType": "update_coordinates",
+      "id": "window_2",
       "payload": {
-        "id": "window_2",
-        "type": "button",
-        "title": "New Application",
-        "coordinates": {
-          "x": 0,
-          "y": 0,
-          "width": 600,
-          "height": 400
-        },
-        "elements": []
+        "x": 0,
+        "y": 0,
+        "width": 600,
+        "height": 400
+      }
+    },
+    {
+      "actionType": "set_screen",
+      "payload": {
+        "width": 600,
+        "height": 400,
+        "dpi": 96
       }
     }
   ]
@@ -68,13 +70,14 @@ JSON validation failed: Type '{ id: string; type: "button"; title: string; coord
 {
   "actions": [
     {
-      "actionType": "unknown",
-      "text": "Copy the content of the text field with ID txt_1."
+      "actionType": "type",
+      "target": "txt_1",
+      "content": "",
+      "result": "success",
+      "timestamp": "2023-08-22T12:41:45Z"
     }
   ]
 }
-I didn't understand the following:
-Copy the content of the text field with ID txt_1.
 {
   "actions": [
     {
@@ -95,22 +98,11 @@ Copy the content of the text field with ID txt_1.
 {
   "actions": [
     {
-      "actionType": "update_element_status",
-      "id": "txt_1",
-      "status": "focus"
-    },
-    {
-      "actionType": "add_element",
-      "payload": {
-        "id": "txt_1",
-        "type": "text_field",
-        "coordinates": {
-          "x": 0,
-          "y": 0,
-          "width": 0,
-          "height": 0
-        }
-      }
+      "actionType": "type",
+      "target": "txt_1",
+      "content": "Hello World",
+      "result": "success",
+      "timestamp": "2023-08-22T12:43:45Z"
     }
   ]
 }
@@ -127,21 +119,6 @@ Copy the content of the text field with ID txt_1.
           "width": 0,
           "height": 0
         }
-      }
-    },
-    {
-      "actionType": "update_element_status",
-      "id": "btn_2",
-      "status": "enabled"
-    },
-    {
-      "actionType": "update_coordinates",
-      "id": "window_2",
-      "payload": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
       }
     }
   ]

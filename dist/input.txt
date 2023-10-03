@@ -1,10 +1,10 @@
-Set the screen width to 1920 and height to 1080 with a DPI of 96.
-Add a button with ID btn_2 at coordinates x=300, y=400 with dimensions 60x40.
-Focus the text field with ID txt_1.
-Create a window with ID window_2 titled "New Application" at the top-left corner with dimensions 600x400.
-Disable the button with ID btn_1.
-Copy the content of the text field with ID txt_1.
-Add a label with ID label_2 and content "Password" at coordinates x=150, y=220.
-Type "Hello World" into the text field with ID txt_1.
-Add the button with ID btn_2 to the window with ID window_2.
-Change the DPI of the screen to 72.
+2023-08-22T12:36:45Z Set the screen width to 1920 and height to 1080 with a DPI of 96.
+2023-08-22T12:37:45Z Add a button with ID btn_2 at coordinates x=300, y=400 with dimensions 60x40.
+2023-08-22T12:38:45Z Focus the text field with ID txt_1.
+2023-08-22T12:39:45Z Create a window with ID window_2 titled "New Application" at the top-left corner with dimensions 600x400.
+2023-08-22T12:40:45Z Disable the button with ID btn_1.
+2023-08-22T12:41:45Z Copy the content of the text field with ID txt_1.
+2023-08-22T12:42:45Z Add a label with ID label_2 and content "Password" at coordinates x=150, y=220.
+2023-08-22T12:43:45Z Type "Hello World" into the text field with ID txt_1.
+2023-08-22T12:44:45Z Add the button with ID btn_2 to the window with ID window_2.
+2023-08-22T12:45:45Z Change the DPI of the screen to 72.

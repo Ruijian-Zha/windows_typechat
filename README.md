@@ -13,22 +13,17 @@ Example prompts can be found in [`src/input.txt`](./src/input.txt).
 For instance, you can use natural language to set a screen configuration:
 
 **Input**:
-📅> Set the screen width to 1920 and height to 1080 with a DPI of 96.
-
+📅> 2023-08-22T12:41:45Z Copy the content of the text field with ID txt_1.
 
 **Output**:
-
-```json
 {
   "actions": [
     {
-      "actionType": "set_screen",
-      "payload": {
-        "width": 1920,
-        "height": 1080,
-        "dpi": 96
-      }
+      "actionType": "type",
+      "target": "txt_1",
+      "content": "",
+      "result": "success",
+      "timestamp": "2023-08-22T12:41:45Z"
     }
   ]
 }
-```

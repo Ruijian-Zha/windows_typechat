@@ -16,6 +16,7 @@ For instance, you can use natural language to set a screen configuration:
 📅> 2023-08-22T12:41:45Z Copy the content of the text field with ID txt_1.
 
 **Output**:
+```
 {
   "actions": [
     {
@@ -27,3 +28,4 @@ For instance, you can use natural language to set a screen configuration:
     }
   ]
 }
+```

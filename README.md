@@ -2,7 +2,7 @@
 
 This example demonstrates how to capture user intent related to window actions, such as setting screen configurations, adding or updating elements on the screen, and more. The actions are defined by the [`WindowActions`](./src/windowActionsSchema.ts) type.
 
-## tutorial to use 
+## Tutorial to use 
 https://microsoft.github.io/TypeChat/docs/examples/
 
 ## Try Window Actions
